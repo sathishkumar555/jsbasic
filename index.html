@@ -1,0 +1,90 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1></h1>
+        <h2></h2>
+        <button>Update User</button>
+        <button>Click ME</button>
+        <button class="btntest">Click test1</button>
+        <button class="btntest">Click test1</button>
+        
+
+`
+        <form>
+            Enter guess<input type="text" id="radom" class="guessField" name="radom"> 
+            <input type="button" value="Find guess" class="guessSubmit" >
+        </form>
+        <div></div>
+        <p class="successmsg"></p>
+        <p class="lowVal"></p>
+        <p class="highVal"></p>
+        <button class="newstart">Start Guessing again</button>
+        
+        
+        
+        <img src="" alt="empty image path" />
+
+        <button class="strmac">Start Machine</button>
+        <p class="strp">The machine is stopped</p>
+
+       
+      
+
+        <script type="text/javascript" src="./index.js"> </script>
+        <script type="text/javascript" src="./randomgame.js"> </script>
+        <script type="text/javascript" src="./machineGame.js"> </script>
+        <script type="text/javascript" src="./objects.js"> </script>
+        <script type="text/javascript" src="./query.js"> </script>
+        <script type="text/javascript" src="./array_methods.js"> </script>
+        <script type="text/javascript" src="./error_handling.js"> </script>
+        
+
+        <form method="POST" enctype="multipart/form-data" >
+        <label>Name:</label>    <input type="text" name="name" id="name" placeholder="Enter Your name" value="sathish" > <br/><br/>
+         Address: <input type="text" name="address" id="address" placeholder="Enter Address" > <br/><br/>
+         Password:<input type="password" name="pwd" id="pwd" ><br/><br/>
+         email:<input type="email" name="email" id="email" > <br/><br/>
+         dob <input type="date" name="date" id="date" > <br/><br/>
+         familymem <input type="number" name="fam" id="fam" min="1" max="5"  > <br/><br/>
+        hidden field <input type="hidden" > <br/>
+        gender :<input type="radio" name="gen" id="gen" value="male">Male
+         <input type="radio" name="gen" id="gen" value="female">female  <br/>
+        hobbies: 
+        <input type="checkbox" name="cricket" id="cricket" >cricket
+        <input type="checkbox" name="football" id="football" >football  
+            <input type="checkbox" name="hockey" id="hockey" >hockey
+            <br/>
+            <input type="file" >
+        
+            <br/>
+            <br/>
+        <!-- <input type="submit" value="Add data sub"  > -->
+        <input type="button" value="Add data btn" onclick="submitform()"  >
+        <input type="reset"  >
+        
+        
+
+
+         
+        </form>
+
+        <script>
+            function submitform(){
+                var name=document.getElementById('name').value;
+                var email=document.getElementById('email').value;
+                var gender=document.getElementById('gen').value;
+                
+                
+                console.log(name + email +gender);
+            }
+        </script>
+        
+        
+        
+        
+        
+        
+    </body>
+</html> 

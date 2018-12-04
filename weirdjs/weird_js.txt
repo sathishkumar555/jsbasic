@@ -1,0 +1,22 @@
+Javascript:
+    -syntax parsers
+    -lexical environment
+    -execution contexts--to check which lexical env is currently running (creation phase)
+    -compliers->converting the code to machine understanding
+    -Name-value or key-value pair in objects
+
+Two Phase:
+-creation phase
+-execution phase
+
+-Global execution context consist of global object(window) and this and outer environment.
+-Javascript is  Single threaded and Sychronous in its execution
+            Single threaded:
+                        -one command at a time.
+            Sychronous:
+                        -execeute one at a time in order
+-In global execution context, when we invoke the function it will create one more execution context.(stack event)
+    refer:function invoke execu context.png
+
+
+

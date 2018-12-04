@@ -1,0 +1,14 @@
+-html structure
+-basic design with html elements and comments
+-elements and Attribute (class)
+-headings and paragraphs
+-styles,icons
+-tables and list
+-html 5 semantic elements
+- All css properties=>color,bg,marign,padding,position,diplay,
+-css3 properties
+-attr selectors
+-html forms
+
+Javascript:
+
