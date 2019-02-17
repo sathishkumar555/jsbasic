@@ -1,0 +1,72 @@
+1)New features added in react 16
+
+    - context Api ,fragments, Hoc
+    - create ref
+    - forward ref
+    -pointers **
+    -React memo  =>similiar like shouldComponentUpdate or PureComponent
+    -getDerivedStateFromError() and componentDidCatch
+    - hooks
+    
+2)how virtual dom vs real dom works?
+    - efficient diff algorithm
+    - observables => check for modified components
+    - Batched update operations
+    - efficient update of subtree only
+ =>parent changes => child also rerenders , to avoid use shouldComponentUpdate
+ =>breadth first search
+ =>diff algorithm
+ =>batch update (event loop)
+
+3)The rendertoString from 'react-dom/server' library used to render our ReactComponent to Html
+
+4) lifecycles
+
+    creation phase:
+        static getDerivedStateFromProps(props,state)
+        componentWillMount(){}
+        render
+        componentDidMount(){}
+
+    updation phase:
+        static getDerivedStateFromProps
+        shouldComponentUpdate(nextprops,nextstate){}
+        componentWillUpdate(){}
+        render
+        getSnapshotBeforeUpdate(prevProps, prevState)
+        componentDidUpdate(prevprops,prevstate,snapshot){}
+
+    unMounting:
+
+    Error Handling:
+    componentDidCatch(error,info)
+    static getDerivedStateFromError()
+
+5)this.setState((prevState,props)=>{
+    counter:counter+1
+},()=>{})
+
+this.setState((prevState,props)=>{
+    return{
+        counter:counter+1
+    }
+},()=>{})
+
+
+6)const AuthContext= React.createContext(false);
+
+<AuthContext.Provider value={a:"apple",b:"ball"};
+
+</AuthContext.Provider>
+<AuthContext.Consumer>              // stateless component
+    {(authContext)=>{
+        return(
+
+        )
+    }}
+</AuthContext.Consumer>
+
+//state component
+static contextType=AuthContext;
+
+{this.context.isAuth}

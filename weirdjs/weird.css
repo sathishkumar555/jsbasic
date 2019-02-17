@@ -1,0 +1,78 @@
+.footer .content .emailsignwrapper.opened {
+    margin-bottom: -1px;
+}
+
+.footer .content .emailsignwrapper {
+    border-top: 1px solid #d3a276;
+    border-left: 1px solid #d3a276;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: landscape)
+.footer .content .emailsignwrapper {
+    margin-right: 0;
+}
+
+.footer .content .emailsignwrapper {
+    -webkit-transition: margin-bottom 1s ease;
+    -moz-transition: margin-bottom 1s ease;
+    -ms-transition: margin-bottom 1s ease;
+    -o-transition: margin-bottom 1s ease;
+    transition: margin-bottom 1s ease;
+    display: table;
+    position: fixed;
+    width: 500px;
+    background: #b09076;
+    right: 0;
+    bottom: 0;
+    margin: 0 0 -217px 0;
+    height: 216px;
+    z-index: 501;
+    border-top: 1px solid #d3a276;
+    /* border-left: 1px solid #d3a276; */
+}
+
+.footer .content .emailsignwrapper .emailToggle {
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.footer .content .emailsignwrapper.was-closed {
+    margin-bottom: -175px;
+    cursor: pointer;
+}
+.footer .content .emailsignwrapper .emailToggle .icon-email {
+    left: 20px;
+}
+
+.footer .content .emailsignwrapper .emailToggle .icon-email, .footer .content .emailsignwrapper .emailToggle .icon-phone, .footer .content .emailsignwrapper .emailToggle .icon-arrow {
+    cursor: pointer;
+}
+
+.footer .content .emailsignwrapper .emailToggle .icon {
+    position: absolute;
+}
+
+.footer .content .emailsignwrapper .icon {
+    display: inline-block;
+    background: url(../images/email_sprite_icons.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+.footer .content .emailsignwrapper .emailToggle {
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.footer .content .emailsignwrapper .emailToggle .icon {
+    position: absolute;
+}

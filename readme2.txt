@@ -390,13 +390,13 @@ Memory Management:  //garabage collection
 
 event bubbling:
         -the third parameter is by default false.
-    item.addEventListener("click", doSomething, false);
-    item.addEventListener("click", doSomething);
+          item.addEventListener("click", doSomething, false);
+          item.addEventListener("click", doSomething);
     
         
 
 event capturing:
-        -if the third parameter is true then it is happen in the capturing phase .
+    - if the third parameter is true then it is happen in the capturing phase .
     item.addEventListener("click", doSomething, true);
 
 to interupt event

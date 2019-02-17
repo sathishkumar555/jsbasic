@@ -1,8 +1,32 @@
 <html>
     <head>
+        <style>
+        .col{
+            height: 100px;
+            margin: 20px;
+        }
+        .wrap{
+            box-sizing:border-box;
 
+        }
+        </style>
     </head>
     <body>
+        <canvas id="e" width="200" height="200"></canvas>
+        <script>
+            var canvas=document.getElementById('e');
+            var context=canvas.getContext("2d");
+            context.fillStyle="blue";
+            context.font="bold 16px Arial";
+            context.fillText("zibri",100,100);
+        </script>
+
+<div class="wrap">
+            <div class="col">1</div>
+            <div class="col">2</div>
+
+        </div>
+    
         <h1></h1>
         <h2></h2>
         <button>Update User</button>
