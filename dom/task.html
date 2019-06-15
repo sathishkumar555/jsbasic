@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <!-- Udemy Javascript course by andrew mead -->
+
+   
+<!-- task3 -->
+<h2>Search food</h2>
+    <input type="text" id="srh-food" >
+    <label>
+            <input type="checkbox" id="hide-comp">Hide Completed Food
+    </label>
+  
+    <select id="filter-by">
+        <option value="byEdited">Sort By last Edited</option>
+        <option value="byCreated">Sort By recently created</option>
+        <option value="alphabetically">Sort Alphabetically</option>
+    </select>
+    <br/>
+      <!-- form task - Add food -->
+      <form id="taskForm">
+        <input type="text" name="addFood"  placeholder="Add food">
+        <button>Add</button>
+        <div id="food-list"></div>
+    </form>
+    <!-- form task -->
+    <br/>
+    <div id="show-food"></div>
+<!-- task3 -->
+
+
+<script src='task.js'></script>    
+</body>
+</html>

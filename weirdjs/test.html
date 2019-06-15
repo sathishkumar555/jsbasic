@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script type="text/javascript" src="main.js"></script> -->
+    <style>
+        .clr-red{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="clr-indigo">
+        I am sathish
+    </div>
+
+    <div></div>
+    <p></p>
+    <p style="color:blue;border:1px solid red;">Change my color to blue</p>
+    <header>dsds</header>
+    <article> s,djsnd </article>
+    <footer>facebook</footer>
+
+    <form enctype="multipart/form-data" novalidate >
+        <input type="text" name="first_name" id="name" placeholder="Enter the name" required  value="" />
+        <input type="email" name="email" id="email" placeholder="Enter the email" value=""  />
+        <input type="file" name="file" id="file" />
+        <input type="number" name="mobile" id="mobile"  max="10" placeholder="Enter the number" />
+        <input type="date" name="date" id="date" />
+        <input type="password" />
+        <input type="radio" name="gender" />Male
+        <input type="radio" name="gender" />Female
+        <input type="radio" name="gender" />Others
+        <!-- <input type="checkbox" name="hobb" -->
+        <br/>
+        <input type="checkbox" name="hobies" />cricket
+        <input type="checkbox" name="hobies" />cooking
+        <input type="checkbox" name="hobies" />dance
+
+        <!-- <input type="submit" /> -->
+        <input type="button" value="submit data"  onclick="submitdata()"/>
+    </form>
+    
+    <script src="hackerinterview.js"></script>
+    <script>
+        console.log("tes script");
+
+        function submitdata(){
+            var name = document.getElementById('name').value;
+            // var pattern_first= /^[1,9]/;
+            var pattern_first= /^(abc)/;
+
+            var email = document.getElementById('email').value;
+            var number = document.getElementById('mobile').value;
+            if(number.length==10){
+                console.log("valid data "+number.length)
+                
+            }else{
+            console.log("invalid data "+ number.length)
+             }
+
+             if(pattern_first.test(name)){
+                 console.log(name + " pattern matched")
+             }else{
+                 console.log(name + " pattern not matched")
+             }
+
+            console.log(number);
+
+
+            console.log(name , email);
+            console.log("method logged in ");
+
+            var output={
+                jname:name,
+                jemail:email,
+                jnumber:number
+            };
+
+            console.log(output)
+            var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+xmlhttp.open("POST", "/json-handler");
+xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+xmlhttp.send(JSON.stringify(output));
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+        }
+    </script>
+</body>
+</html>

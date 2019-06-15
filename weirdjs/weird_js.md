@@ -11,11 +11,11 @@
 - execution phase=> use that memory,parse,compile
 
 **Hoisting:**
-- setup memory space for variables and functions is hoisting
+- ***setup memory space for variables and functions is hoisting***
 
 - when code start executing it runs in global execution context  consist of `global object(window)` and     `this` and When you  r inside the function the `outer environment` will be created.
 
-- at global level, `GlobalObjecct(window) === 'this'`
+- at global level, `GlobalObject(window) === 'this'`
 
 - Javascript is  Single threaded and Sychronous in its execution
     - Single threaded:
